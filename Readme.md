@@ -1,19 +1,20 @@
-**coKWEJFKADMVA;DN ** - AL/JKN   P3R-0923ORJF ALJHGO98Q3 ITR`23HFASIUDVA ,TJ QB83`
-**cd ..** - Wlkfj ;qwigaejnga ;og   'woejf kwEFK; wkgiqwhrjgneagea
+# Базовые команды терминала
 
-**mkdir** - llkjg;j 9q2[349t5iitup w87 23ot 2].
+**cd <имя папки>** - Переместиться внутрь папки. Имя может быть любым.
 
-**ls** - 2po3uprq98 iuIUR823**&^)!*#^)!&^%#@!*()
+**cd ..** - Переместиться из папки.
 
-**new-item "<имя файла>"** - p(*#&%)(*@#)%&* *#&%*& 
+**mkdir** - Создать новую папку.
 
-**git init** - p(*#&( *tujh d jhs e*r&p(# {ptriewp(*f& w#*urt )})))
+**ls** - Отобразить список папок и файлов.
 
-**git status** - (*#%gjl iupq*IUP#* RSIDVS*D(*uGSet wpe(w9rtP I*)
+**new-item "<имя файла>"** - Создать новый файл. Имя может быть любым.
 
-**git add <имя файла>** - (*#&%HGBLSDO F* EU#TIH@P#UY FS GDFO&WY#*)
+# Команды GIT
 
-**git add .** - (*#TJSLUD FUYPIURI@HP#URY&F*DWJRI#YR(* *)
+**git init** - Инициализация локального репозитория.
+
+**git status** - Отобразить текущее состояние git.
 
 **git add <имя файла>** - Подготавливает файл к следующему коммиту.
 
@@ -35,15 +36,15 @@
 
 **git branch** - Отображает список всех веток в репозитории.
 
-**git branch <имя ветки>** - 2po t483uptuyp49873i4rhgnsdv c vzd k.rit3irhgn fgjkvathq
+**git branch <имя ветки>** - Создать новую ветку коммитов. Имя может быть любым.
 
-**git checkout <имя ветки>** - a.,msbvl zoigpaei4tym egS;'odbv][ozubvjz d rnt.3k4t]
+**git checkout <имя ветки>** - Переход к другой ветке.
 
-**git checkout -b <имя ветки>** - ldkfjg;kdfnbm dmbvskdgal eryto qukgn;aksdjvgjkanrg
+**git checkout -b <имя ветки>** - Создание и сразу переход в новую ветку. Имя может быть любым.
 
-**git branch -d <имя ветки>** - .s/kdfb;df oajgasdlkv wglae;hjkaljdhgkajljg eiotu[9b348ti ygelrjgiquyt]
-* **-d** - w09e8t7quUp3wuy*&#*P#IUJGSDIG(*  #RTPW*E BOWHT#RKNWQETIOP WIETPWI#T)
-* **-D** - LKJH LVB*TPWI#T I*WEPIF WKJETLKJWOV DHSLV SE:OT OI
+**git branch -d <имя ветки>** - Удалить ветку. 
+* **-d** - флаг позволит удалить только слитую ветку. Когда из той ветки все данный слиты в ветку мастер.
+* **-D** - фалг позволит удалить любую ветку, даже ту которая не слита. (не рекомендую ее использовать).
 
 **git merge <имя ветки>** - Слить в текущую ветку изменения из <имя ветки>.
 
