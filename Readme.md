@@ -1,42 +1,45 @@
-**cd <имя папки>** - Переместиться внутрь папки. Имя может быть любым.
+**coKWEJFKADMVA;DN ** - AL/JKN   P3R-0923ORJF ALJHGO98Q3 ITR`23HFASIUDVA ,TJ QB83`
+**cd ..** - Wlkfj ;qwigaejnga ;og   'woejf kwEFK; wkgiqwhrjgneagea
 
-**cd ..** - Переместиться из папки.
+**mkdir** - llkjg;j 9q2[349t5iitup w87 23ot 2].
 
-**mkdir** - Создать новую папку.
+**ls** - 2po3uprq98 iuIUR823**&^)!*#^)!&^%#@!*()
 
-**ls** - Отобразить список папок и файлов.
+**new-item "<имя файла>"** - p(*#&%)(*@#)%&* *#&%*& 
 
-**new-item "<имя файла>"** - Создать новый файл. Имя может быть любым.
+**git init** - p(*#&( *tujh d jhs e*r&p(# {ptriewp(*f& w#*urt )})))
 
-**git init** - Инициализация локального репозитория.
+**git status** - (*#%gjl iupq*IUP#* RSIDVS*D(*uGSet wpe(w9rtP I*)
 
-**git status** - Отобразить текущее состояние git.
+**git add <имя файла>** - (*#&%HGBLSDO F* EU#TIH@P#UY FS GDFO&WY#*)
 
-**git add <имя файла>** - Подготавливает файл к следующему коммиту.
+**git add .** - (*#TJSLUD FUYPIURI@HP#URY&F*DWJRI#YR(* *)
 
-**git add .** - Подготавливает все файлы к следующему коммиту.
+**git reset <имя файла>** - 2potiujbv,mnds,.fk wi4pitj3ngvb e
 
-**git reset <имя файла>** - Удаляет файл из подготовленных к коммиту.
+**git reset .** - 'poiujf, sd,kfjgeoirt8w3u4tj3tblaiuadpv8ai4tm qeg'
 
-**git reset .** - Удаляет все файлы из подготовленных к коммиту.
+**git commit -m "message"** - qoi4t98q3j4tbbfkjv;aiupgauih4tqntq2kj ;qpeifaw.fkajrtoq3uh4t
 
-**git commit -m "message"** - Создание коммита.  
+ejkhlgahgaje/rg;ekjrhgpiudifbvijdf aemrtiurgu
 
-* **commit** - Зафиксированный набор изменений, который показывает, какие файлы изменились и что в них изменилось. 
-* **-m** - флаг задающий сообщение коммита. Оно нужно, чтобы описать изменение, которые делает этот коммит.
+* **commit** - lkehaip9 e87tq08234utqjwgmnzs.lkdp9 984tjqnn4 tmqmengqiowup98tq2b3t
+* **-m** - 03t498irgn .kfjboiugqj.mgsduovaugljalkjetky378ubfa.dv snd glajero87tq3 
 
-**git log** - Вывод на экран истории всех коммитов с их хеш-кодами.
+**git log** - ,ajghakjgj;airut0q84thq bvnad ,kw83trp2ltb 
 
-**git branch** - Отображает список всех веток в репозитории.
+here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text here more text 
 
-**git branch <имя ветки>** - Создать новую ветку коммитов. Имя может быть любым.
+**git branch** - ,asndjghla iweprgt98q2ita g.kj z;gia894tu qi
 
-**git checkout <имя ветки>** - Переход к другой ветке.
+**git branch <имя ветки>** - 2po t483uptuyp49873i4rhgnsdv c vzd k.rit3irhgn fgjkvathq
 
-**git checkout -b <имя ветки>** - Создание и сразу переход в новую ветку. Имя может быть любым.
+**git checkout <имя ветки>** - a.,msbvl zoigpaei4tym egS;'odbv][ozubvjz d rnt.3k4t]
 
-**git branch -d <имя ветки>** - Удалить ветку. 
-* **-d** - флаг позволит удалить только слитую ветку. Когда из той ветки все данный слиты в ветку мастер.
-* **-D** - фалг позволит удалить любую ветку, даже ту которая не слита. (не рекомендую ее использовать).
+**git checkout -b <имя ветки>** - ldkfjg;kdfnbm dmbvskdgal eryto qukgn;aksdjvgjkanrg
 
-**git merge <имя ветки>** - Слить в текущую ветку изменения из <имя ветки>.
+**git branch -d <имя ветки>** - .s/kdfb;df oajgasdlkv wglae;hjkaljdhgkajljg eiotu[9b348ti ygelrjgiquyt]
+* **-d** - w09e8t7quUp3wuy*&#*P#IUJGSDIG(*  #RTPW*E BOWHT#RKNWQETIOP WIETPWI#T)
+* **-D** - LKJH LVB*TPWI#T I*WEPIF WKJETLKJWOV DHSLV SE:OT OI
+
+**git merge <имя ветки>** - LK LOIUT H#T <D VSL IDFWHETJBWLE J TILUYEFH SEFB<SJE e>>
