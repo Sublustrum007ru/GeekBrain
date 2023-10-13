@@ -6,8 +6,11 @@ string secondnumber = Console.ReadLine();
 int b = Convert.ToInt32(secondnumber);
 
 if (a>b){
-    Console.WriteLine("Первое число "+"'"+a+"' "+"больше чем второе число "+"'"+b+"'");
+    Console.WriteLine("Первое число "+"`"+a+"`"+" больше чем второе число "+"`"+b+"`");
 }
-else {
-    Console.WriteLine("Первое число "+"'"+a+"'"+"меньше чем второе число "+"'"+b+"'");
+else if (a<b){
+    Console.WriteLine("Первое число "+"`"+a+"`"+" меньше чем второе число "+"`"+b+"`");
+}
+else{
+    Console.WriteLine("Введенные числа равны "+"`"+a+"`");
 }

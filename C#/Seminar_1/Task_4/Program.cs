@@ -7,7 +7,7 @@ int count = 1;
 
 while (count<=a){
     if ((count%2)==0){
-        Console.WriteLine(count);
+        Console.Write(count+"\t");
     }
     count = count + 1;
 }

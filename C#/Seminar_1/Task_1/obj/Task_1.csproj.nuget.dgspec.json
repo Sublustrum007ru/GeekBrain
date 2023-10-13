@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_1\\Task_1.csproj": {}
+    "D:\\learing\\GeekBrain\\C#\\Seminar_1\\task_1\\Task_1.csproj": {}
   },
   "projects": {
-    "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_1\\Task_1.csproj": {
+    "D:\\learing\\GeekBrain\\C#\\Seminar_1\\task_1\\Task_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_1\\Task_1.csproj",
+        "projectUniqueName": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\task_1\\Task_1.csproj",
         "projectName": "Task_1",
-        "projectPath": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_1\\Task_1.csproj",
+        "projectPath": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\task_1\\Task_1.csproj",
         "packagesPath": "C:\\Users\\Altair\\.nuget\\packages\\",
-        "outputPath": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_1\\obj\\",
+        "outputPath": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\task_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Altair\\AppData\\Roaming\\NuGet\\NuGet.Config"
