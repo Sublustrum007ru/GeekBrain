@@ -5,21 +5,8 @@
     return result;
 }
 
-int a1 = 15;
-int b1 = 21;
-int c1 = 39;
-int a2 = 2532;
-int b2 = 23;
-int c2 = 522;
-int a3 = 13;
-int b3 = 23;
-int c3 = 33;
-
-// int max1 = FindMax(a1, b1, c1);
-// int max2 = FindMax(a2, b2, c2);
-// int max3 = FindMax(a3, b3, c3);
-// int max = FindMax(max1, max2, max3);
-
-int max = FindMax(FindMax(a1, b1, c1), FindMax(a2, b2, c2), FindMax(a3, b3, c3)); // вместо предыдущих 4 строчек можно использовать вот такую одну
+int [] array = { 34, 68, 75, 753, 4563, 233, 2453, 123, 92 };
+int count = 0;
+int max = FindMax(array[0], array[1], array[2]);
 
 Console.WriteLine(max);
