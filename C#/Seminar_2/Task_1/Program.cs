@@ -1,8 +1,8 @@
 ﻿Console.Clear();
-Console.Write("input number: ");
+Console.Write("Введите число: ");
 string input = Console.ReadLine();
 int number;
-if (int.TryParse(input, out number))
+if (int.TryParse(input, out number)) // Проверка введенных данных, если число то Yes, если нет то No
 {
     int[] arrInt = new int[input.Length];
     int length = input.Length;
