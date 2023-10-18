@@ -53,6 +53,8 @@
 //     Console.WriteLine("No");
 // }
 
+/* Проверка что введено именно число, а не строка
+
 int number;
 Console.WriteLine("Введите число:");
 string input = Console.ReadLine();
@@ -64,3 +66,5 @@ else
 {
     Console.WriteLine("Ошибка: вы должны ввести число.");
 }
+
+*/
