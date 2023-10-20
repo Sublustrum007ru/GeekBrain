@@ -1,21 +1,4 @@
 ﻿Console.Clear();
-// Random generateNumber = new Random();
-// int number = generateNumber.Next(10,1000);
-
-// Console.WriteLine(number);
-// int a = number / 10;
-// int b = number % 10;
-
-// if (a > b){
-//     Console.WriteLine("Первая цифра > больше второй");
-// }
-// else if (a < b){
-//     Console.WriteLine("Вторая цифра > больше первой");
-
-// }
-// else{
-//     Console.WriteLine("Цифры равны");
-// }
 
 // Random generateNumber = new Random();
 // int number = generateNumber.Next(10,1000);
@@ -68,3 +51,13 @@ else
 }
 
 */
+
+int[] array = new int[2];
+
+for (int i = 0; i < array.Length; i++){
+    array[i] = Convert.ToInt32(Console.ReadLine());
+}
+
+if (array[0] > 0 && array[1] > 0){
+    Console.WriteLine("Первая четверть");
+}
