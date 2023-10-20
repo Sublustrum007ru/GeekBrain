@@ -36,28 +36,31 @@
 //     Console.WriteLine("No");
 // }
 
-/* Проверка что введено именно число, а не строка
+/* Проверка что введено именно число(int)
 
-int number;
 Console.WriteLine("Введите число:");
 string input = Console.ReadLine();
-if (int.TryParse(input, out number))
+if (int.TryParse(input, out int number))  // Проверка что введеннное значение целое число(int)
 {
-    Console.WriteLine($"Вы ввели число: {number}");
+    Console.WriteLine($"Вы ввели число: {number}");  //Если true Выполнить оператор
 }
 else
 {
-    Console.WriteLine("Ошибка: вы должны ввести число.");
+    Console.WriteLine("Ошибка: вы должны ввести число."); //Если false выполнить оператор
 }
 
 */
+//Ввод данных
+Console.WriteLine("Введите число:");
+string input = Console.ReadLine();
 
-int[] array = new int[2];
-
-for (int i = 0; i < array.Length; i++){
-    array[i] = Convert.ToInt32(Console.ReadLine());
+//Выполнение проверки ввода данных
+if (int.TryParse(input, out int number)){
+    //Вывод если true
+    Console.WriteLine($"Вы ввели число: `{number}`");
 }
-
-if (array[0] > 0 && array[1] > 0){
-    Console.WriteLine("Первая четверть");
+    
+else{
+    //Вывод если false
+    Console.WriteLine("Ошибка: вы должны ввести число.");
 }
