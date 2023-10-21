@@ -16,7 +16,7 @@
         }
     }
     else{
-        Console.WriteLine("Число не пятизначное");
+        Console.WriteLine($"Число не {limit}-значное");
         return false;
     }
 
