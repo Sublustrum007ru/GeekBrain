@@ -2,16 +2,14 @@
 Console.Write("Введите число: ");
 
 string input = Console.ReadLine();
-int number;
-if (int.TryParse(input, out number))  // Проверка введенных данных, если число то Yes, если нет то No
-{
-    int i = Convert.ToInt32(input);
 
-    if (i >= 1 && i <= 5){
+if (int.TryParse(input, out int number))  // Проверка введенных данных, если число то Yes, если нет то No
+{
+    if (number >= 1 && number <= 5){
         Console.WriteLine("Этот день недели не выходной");
     }
 
-    else if (i == 6 || i == 7){
+    else if (number == 6 || number == 7){
         Console.WriteLine("Этот день недели выходной");
     }
 
