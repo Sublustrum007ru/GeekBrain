@@ -316,7 +316,7 @@ else{
     Console.WriteLine("Вы должны ввечти число!!");
 }
 */
-
+/*
 string Promt(){
     Console.Write("Введите колличесвто элементов массива: ");
     string result = Console.ReadLine();
@@ -349,3 +349,21 @@ string input = Promt();
 // PrintArray(input);
 int[] arr = GeneratArray(input);
 PrintArray(arr);
+*/
+/*
+string Promt(string str){
+    Console.Write(str);
+    string result = Console.ReadLine();
+    return result;
+}
+
+string str1 = Promt("Введите первое число: ");
+string str2 = Promt("Введите второе число: ");
+
+if (int.TryParse(str1, out int test1) && int.TryParse(str2, out int test2)){
+    Console.WriteLine("Yes");
+}
+else {
+    Console.WriteLine("No");
+}
+*/
