@@ -1,11 +1,11 @@
 ﻿Console.Clear();
-void FillArray(int[] collection)
+void FillArray(int[] array)
 {
-    int lenght = collection.Length;
+    int length = array.Length;
     int index = 0;
-    while (index < lenght)
+    while (index < length)
     {
-        collection[index] = new Random().Next(1, 10);
+        array[index] = new Random().Next(0, 2);
         index++;
     }
 }
@@ -33,11 +33,11 @@ int IndexOff(int[] collection, int find){
     }
     return position;
 }
-int [] array = new int[10];
+int [] array = new int[8];
 
 FillArray(array);
-array[4] = 4;
-array[6] = 4;
+// array[4] = 4;
+// array[6] = 4;
 PrintArray(array);
 Console.WriteLine();
 int pos = IndexOff(array, 444);

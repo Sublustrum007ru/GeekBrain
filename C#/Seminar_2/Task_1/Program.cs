@@ -14,6 +14,7 @@ if (int.TryParse(input, out number)) // Проверка введенных да
 
     if (length == 3){
         Console.WriteLine(arrInt[1]);
+//        Console.WriteLine("[{0}]", string.Join(", ", arrInt)); //Вывод всего массива
     }
 
     else {

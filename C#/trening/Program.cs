@@ -92,7 +92,7 @@ else
 // Console.Write("Второе число в моем массиве: ");
 // Console.WriteLine(array2);
 
-//Метод должен проверить является ли число рятизначным, в противном случае вывести 
+//Метод должен проверить является ли число пятизначным, в противном случае вывести 
 //"Число не пятизначное" и "False" на следующей строке
 
 //Дла остальных чисел вернуть "True" или "False"
@@ -207,9 +207,10 @@ int limit = 5;
 bool number = IsPalindrome(input, limit);
 Console.WriteLine($"{number}");
 */
+/*
 bool IsPalindrome(int number){
-int length = number.ToString().Length;
-      if (length == 5){
+    int length = number.ToString().Length;
+    if (length == 5){
         int lastdigit, newnumber = 0; //lastdigit последняя цифра, newnumber новое число
         int temp =  number; //temp временная переменная
         while(number > 0){
@@ -223,9 +224,128 @@ int length = number.ToString().Length;
         else{
            return false;
         }
-      }
-      else{
+    }
+    else{
         Console.WriteLine("Число не пятизначное");
         return false;
-      }
+    }
 }
+*/
+// int SummNumber (int number){
+//     int result = 0;
+//     for (int i = 1; i <= number; i++){
+//         result = result + i;
+//     }
+//     return result;
+// }
+
+// Console.WriteLine("Введите число:");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// int sum = SummNumber(number);
+// Console.WriteLine(sum);
+
+// string Promt(){
+//     Console.Write("Введите число: ");
+//     string result = Console.ReadLine();
+//     return result;
+// }
+
+// int Sublustrum007(string str){
+//     int result = Convert.ToInt32(str);
+//     int length = str.Length;
+//     for (int i = 1; i <= length; i++){
+//         result = result * i;
+//     }
+
+//     return result;
+
+// }
+
+// string a = Promt();
+// int b = Sublustrum007(a);
+// Console.WriteLine($"Колличество цифр в числе {a} равное {b}");
+
+/*
+string Promt(){
+    Console.Write("Введите число N: ");
+    string result = Console.ReadLine();
+    return result;
+}
+
+int Sublustrum007(string str){
+    int N = Convert.ToInt32(str);
+    int result = 1;
+    for(int i = 1; i <= N; i++){
+        result = result * i;
+    }
+    return result;
+}
+
+// string a = Promt();
+// // int b = Sublustrum007(a);
+Console.WriteLine(Sublustrum007(Promt()));
+*/
+
+/*
+string Promt(){
+    Console.Write("Введите число: ");
+    string result = Console.ReadLine();
+    return result;
+
+}
+
+int Sublustrum007(int number){
+    string a = Convert.ToString(number);
+    int result = a.Length;
+    return result;
+}
+
+string input = Promt();
+
+if (int.TryParse(input, out int output)){
+    if (output > 0){
+        Console.WriteLine(Sublustrum007(output));
+    }
+    else {
+        output = output * -1;
+        Console.WriteLine(Sublustrum007(output));
+    }
+}
+else{
+    Console.WriteLine("Вы должны ввечти число!!");
+}
+*/
+
+string Promt(){
+    Console.Write("Введите колличесвто элементов массива: ");
+    string result = Console.ReadLine();
+    return result;
+}
+
+int[] GeneratArray(string arg1){
+    Console.Write("Введите начальную цифру: ");
+    int arg2 = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите конечную цифру: ");
+    int arg3 = (Convert.ToInt32(Console.ReadLine())) + 1;
+    int length = Convert.ToInt32(arg1);
+    int[] array = new int[length];
+    for (int i = 0; i < length; i++)
+    {
+        array[i] = new Random().Next(arg2, arg3);
+        i++;
+    }
+    return array;
+}
+
+void PrintArray(int[] array){
+    Console.WriteLine("[{0}]", string.Join(", ", array));
+}
+
+// PrintArray(Promt());
+// CreateArray();
+
+string input = Promt();
+// PrintArray(input);
+int[] arr = GeneratArray(input);
+PrintArray(arr);
