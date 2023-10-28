@@ -6,7 +6,7 @@ string Promt(string str){
 }
 
 int Degree(int arg1, int arg2){
-    int result = arg1; // result = 3
+    int result = arg1; 
     for (int i = 0; i < arg2 - 1; i++){   
         result = result * arg1;
     }

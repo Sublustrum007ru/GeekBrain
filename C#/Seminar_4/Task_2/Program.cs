@@ -28,7 +28,7 @@ void PrintArray(int[] array){
     Console.WriteLine("[{0}]", string.Join(", ", array));
 }
 
-string str1 = Promt("Введите первое число: ");
+string str1 = Promt("Введите число: ");
 
 int[] arr = CreateArray(str1);
 Console.WriteLine(SummArrayNumb(arr, str1));
