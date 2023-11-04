@@ -35,13 +35,6 @@ double CalcDifferenceBetweenMaxMin(double[] array){
 
 
 
-
-
-
-
-
-
-
 double[] array = new double[] { 3, 7.4, 22.3, 2, 78 };
 Console.WriteLine("Массив:");
 PrintArray(array);

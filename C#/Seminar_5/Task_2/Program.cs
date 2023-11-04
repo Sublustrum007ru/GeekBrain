@@ -35,9 +35,9 @@ int SumOddElements(int[] array){
 
 }
 
-// string str = Promt("Введите количество элементов массива: ");
-// int[] array = CreateArray(str);
-int[] array = new int[] { 18, 76, 11};
+string str = Promt("Введите количество элементов массива: ");
+int[] array = CreateArray(str);
+// int[] array = new int[] { 18, 76, 11};
 PrintArray(array);
 int sumOdd = SumOddElements(array);
 Console.WriteLine($"Сумма нечетных элементов: {sumOdd}");
