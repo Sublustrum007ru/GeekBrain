@@ -1,4 +1,6 @@
-﻿Console.Clear();
+﻿using System.Reflection.Metadata.Ecma335;
+
+Console.Clear();
 
 // Random generateNumber = new Random();
 // int number = generateNumber.Next(10,1000);
@@ -367,7 +369,7 @@ else {
     Console.WriteLine("No");
 }
 */
-
+/*
 string Promt(string str){
     Console.Write(str);
     string result = Console.ReadLine();
@@ -421,3 +423,52 @@ switch (CountEvenElements(array, str)){
         Console.WriteLine($"В массие, {CountEvenElements(array, str)} положительных числа");
         break;
 }
+*/
+
+void PrintArray(double[] array)
+{
+    string str = $"[{string.Join(',', array)}]";
+    Console.WriteLine(str);
+}
+
+double[] CreateArray(int length)
+{
+    double[] array = new double[length];
+    Console.WriteLine("Генерация массива!!");
+    Console.Write("Введите нижную границу массива: ");
+    int LowElement = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Введите нижную границу массива: ");
+    int HighElement = Convert.ToInt32(Console.ReadLine());
+    for(int i = 0; i < length; i++)
+    {
+        array[i] = new Random().Next(LowElement, HighElement);
+    }
+    return array;
+}
+
+double[] ReversArray(double[] array)
+{
+    int length = array.Length;
+    int lastindex = length - 1;
+    for (int i = 0; i < length / 2; i++)
+    {
+        double temp = array[i];
+        array[i] = array[lastindex];
+        array[lastindex] = temp;
+        lastindex = lastindex - 1;
+    }
+
+    return array;
+}
+
+Console.Write("Введите колличество элементов массива: ");
+int numb = Convert.ToInt32(Console.ReadLine());
+double[] array = CreateArray(numb);
+Console.WriteLine();
+Console.WriteLine("Получился такой вот массив:");
+PrintArray(array);
+Console.WriteLine();
+double[] rewers = ReversArray(array);
+Console.WriteLine();
+Console.WriteLine("А это расзернутый массив:");
+PrintArray(rewers);
