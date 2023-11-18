@@ -1,4 +1,8 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
+using System.Threading.Tasks.Dataflow;
+using System.Xml;
+using Microsoft.Win32.SafeHandles;
 
 Console.Clear();
 
@@ -424,7 +428,7 @@ switch (CountEvenElements(array, str)){
         break;
 }
 */
-
+/*
 void PrintArray(double[] array)
 {
     string str = $"[{string.Join(',', array)}]";
@@ -472,3 +476,43 @@ double[] rewers = ReversArray(array);
 Console.WriteLine();
 Console.WriteLine("А это расзернутый массив:");
 PrintArray(rewers);
+*/
+/*
+Console.Write("Введите число: ");
+string enter = Console.ReadLine();
+double numb = Convert.ToDouble(enter);
+
+bool MoreOrLess(double numb){
+    if (numb > 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+Console.WriteLine(MoreOrLess(numb));
+*/
+double[] CreateArray(string[] str){
+    double[] array = new double [str.Length];
+    for ( int i = 0; i < str.Length; i++){
+        array[i] = Convert.ToDouble(str[i]);
+    }
+    return array;
+}
+
+int MoreOrLess(double[] array){
+    int count = 0;
+    for( int i = 0; i < array.Length; i++ ){
+        if (array[i] > 0){
+            count = count + 1;
+        }
+    }
+    return count;
+}
+
+Console.Write("Please enter numbers: ");
+string enter = Console.ReadLine();
+string[] str = enter.Split(",");
+double[] array = CreateArray(str);
+Console.WriteLine(MoreOrLess(array));
