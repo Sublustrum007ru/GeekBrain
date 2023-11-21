@@ -1,4 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks.Dataflow;
 using System.Xml;
@@ -322,6 +322,7 @@ else{
     Console.WriteLine("Вы должны ввечти число!!");
 }
 */
+
 /*
 string Promt(){
     Console.Write("Введите колличесвто элементов массива: ");
@@ -356,6 +357,7 @@ string input = Promt();
 int[] arr = GeneratArray(input);
 PrintArray(arr);
 */
+
 /*
 string Promt(string str){
     Console.Write(str);
@@ -373,6 +375,7 @@ else {
     Console.WriteLine("No");
 }
 */
+
 /*
 string Promt(string str){
     Console.Write(str);
@@ -428,6 +431,7 @@ switch (CountEvenElements(array, str)){
         break;
 }
 */
+
 /*
 void PrintArray(double[] array)
 {
@@ -477,6 +481,7 @@ Console.WriteLine();
 Console.WriteLine("А это расзернутый массив:");
 PrintArray(rewers);
 */
+
 /*
 Console.Write("Введите число: ");
 string enter = Console.ReadLine();
@@ -493,6 +498,8 @@ bool MoreOrLess(double numb){
 
 Console.WriteLine(MoreOrLess(numb));
 */
+
+/*
 double[] CreateArray(string[] str){
     double[] array = new double [str.Length];
     for ( int i = 0; i < str.Length; i++){
@@ -516,3 +523,174 @@ string enter = Console.ReadLine();
 string[] str = enter.Split(",");
 double[] array = CreateArray(str);
 Console.WriteLine(MoreOrLess(array));
+*/
+
+/*
+void PromtStr(string str){
+    Console.Write(str);
+    Console.WriteLine();
+}
+
+int PromtInt(string str){
+    Console.WriteLine(str);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int[,] CreateArray(int m, int n){
+    int[,] array = new int[m, n];
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++){
+            int k = i+j;
+            array[i, j] = k;
+        }
+    }
+
+    return array;
+}
+
+int[,] FindAndEdit(int[,] array, int m, int n){
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++){
+            int k = i+j;
+            array[i, j] = k;
+        }
+    }
+    return array;
+}
+
+void PrintArray(int[,] array){
+    for(int i = 0; i < array.GetLength(0); i++){
+        for(int j = 0; j < array.GetLength(1); j++){
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+}
+
+int m = PromtInt("Введите значение m:");
+int n = PromtInt("Введите значение n:");
+Console.Clear();
+PromtStr($"Вы вввели значение m = {m} и n = {n}");
+Console.WriteLine();
+int[,] array = CreateArray(m, n);
+PrintArray(array);
+*/
+
+/*
+void PromtStr(string str){
+    Console.Write(str);
+    Console.WriteLine();
+}
+
+int PromtInt(string str){
+    Console.WriteLine(str);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int[,] CreateArray(int m, int n){
+    int[,] array = new int[m, n];
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++){
+            int k = i+j;
+            array[i, j] = k;
+        }
+    }
+
+    return array;
+}
+
+int[,] FindAndEdit(int[,] array, int m, int n){
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++){
+            int k = i+j;
+            if(i % 2 != 0 && j % 2 != 0){
+                k = array[i, j] * array[i, j];
+            }
+            array[i, j] = k;
+        }
+    }
+    return array;
+}
+
+void PrintArray(int[,] array){
+    for(int i = 0; i < array.GetLength(0); i++){
+        for(int j = 0; j < array.GetLength(1); j++){
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+}
+
+int m = PromtInt("Введите значение m:");
+int n = PromtInt("Введите значение n:");
+Console.Clear();
+PromtStr($"Вы вввели значение m = {m} и n = {n}");
+Console.WriteLine();
+int[,] array = CreateArray(m, n);
+PromtStr("Массив до изменения.");
+PrintArray(array);
+int[,] newarray = FindAndEdit(array, m, n);
+PromtStr("Массив после изменения.");
+PrintArray(newarray);
+*/
+/*
+void PromtStr(string str){
+    Console.Write(str);
+    Console.WriteLine();
+}
+
+int PromtInt(string str){
+    Console.WriteLine(str);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int[,] CreateArray(int m, int n){
+    int[,] array = new int[m, n];
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++){
+            int k = i+j;
+            array[i, j] = k;
+        }
+    }
+
+    return array;
+}
+
+int Summ(int[,] array, int m, int n){
+    int x = 0;
+    for(int i = 0; i < m; i++)
+    {
+        for(int j = 0; j < n; j++){
+            int k = i+j;
+            if(i == j){
+                x = x + array[i, j];
+            }
+            array[i, j] = k;
+        }
+    }
+    return x;
+}
+
+void PrintArray(int[,] array){
+    for(int i = 0; i < array.GetLength(0); i++){
+        for(int j = 0; j < array.GetLength(1); j++){
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+}
+
+int m = PromtInt("Введите значение m:");
+int n = PromtInt("Введите значение n:");
+Console.Clear();
+PromtStr($"Вы вввели значение m = {m} и n = {n}");
+Console.WriteLine();
+int[,] array = CreateArray(m, n);
+PrintArray(array);
+Console.WriteLine($"Суума элементов, находящихся на главной диагонале равно {Summ(array,  m, n)}");
+*/
