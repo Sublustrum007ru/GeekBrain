@@ -17,7 +17,6 @@ public class Answer {
       // Введите свое решение ниже
       for (int i =0; i < matrix.GetLength(0); i++){
         for( int j = 0; j < matrix.GetLength(1); j++){
-            // Console.Write(matrix[i, j]+"\t");
             Console.Write($"{matrix[i, j]:f2}\t");
         }
         Console.WriteLine();

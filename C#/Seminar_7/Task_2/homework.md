@@ -21,9 +21,12 @@ PrintArray(result);
 PrintCheckIfError(FindNumberByPosition(result, x, y), x, y);
 
 /*
-1   3   5   7   
-9   11  13  15  
-17  19  21  23  
+|||||
+|:-:|:-:|:-:|:-:|
+|1  | 3 |  5  | 7  | 
+|9 |  11 | 13  |15 | 
+|17 | 19 | 21 | 23  |
+
 There is no such index
 */
 
@@ -38,9 +41,12 @@ PrintArray(result);
 PrintCheckIfError(FindNumberByPosition(result, x, y), x, y);
 
 /*
-1   4   7   10  13  
-16  19  22  25  28  
-31  34  37  40  43  
-46  49  52  55  58  
+|||||
+|:-:|:-:|:-:|:-:|
+|1  |  4 | 7  | 10 | 13 |
+|16 | 19 | 22 | 25 | 28 | 
+|31 | 34 | 37 | 40 | 43 | 
+|46 | 49 | 52 | 55 | 58 | 
+
 The number in [2, 2] is 37
 */

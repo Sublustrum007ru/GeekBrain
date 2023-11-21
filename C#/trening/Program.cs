@@ -598,7 +598,6 @@ int[,] CreateArray(int m, int n){
             array[i, j] = k;
         }
     }
-
     return array;
 }
 
