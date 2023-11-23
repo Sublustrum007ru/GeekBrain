@@ -22,9 +22,12 @@ PrintArray(result);
 PrintListAvr(FindAverageInColumns(result));
 
 /*
-1   3   5   7   
-9   11  13  15  
-17  19  21  23  
+|||||
+|:-:|:-:|:-:|:-:|
+|1 |  3 |  5 |  7  | 
+|9 |  11|  13|  15 | 
+|17|  19|  21|  23 | 
+
 The averages in columns are:
 9.00    11.00   13.00   15.00
 */
