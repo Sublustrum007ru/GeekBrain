@@ -46,10 +46,8 @@ public class Answer {
     { 
       // Введите свое решение ниже
       double[] list = new double[matrix.GetLength(1)]; //Создали новый массив длинной в колличество колонок в матрице
-      for(int column = 0; column < matrix.GetLength(1); column++)
-      { 
-        for(int row = 0; row < matrix.GetLength(0); row++)
-        {
+      for(int column = 0; column < matrix.GetLength(1); column++){ 
+        for(int row = 0; row < matrix.GetLength(0); row++){
             list[column] = list[column] + matrix[row, column];
         }
         list[column] = list[column] / matrix.GetLength(0);
