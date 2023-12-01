@@ -693,3 +693,120 @@ int[,] array = CreateArray(m, n);
 PrintArray(array);
 Console.WriteLine($"Суума элементов, находящихся на главной диагонале равно {Summ(array,  m, n)}");
 */
+/* Рекурсия выков функции в самой себе
+
+int m = 5;
+int n = 1;
+
+void Range(int m, int n){
+    if (m == n){
+        Console.Write(m + " ");
+        return;
+    }
+    Console.Write(m + " ");
+    Range(m - 1, n);
+}
+Range(m, n);
+*/
+/*
+int m = 1;
+int n = 15;
+int summ = 0;
+
+void Range(int m, int n){
+    if (m > n){
+        Console.Write($"{summ}");
+        return;
+    }
+    summ = summ + m;
+    Range(m + 1, n);
+}
+Range(m, n);
+*/
+
+int A(int m, int n){
+    if(m == 0){
+        return n + 1;
+    }
+    else{
+        if((m != 0) && (n == 0)){
+            return A(m - 1, 1);
+        }
+        else{
+            return A(m - 1, A(m, n - 1));
+        }
+    }
+}
+int m = 3;
+int n = 2;    
+int result = A(m, n);
+Console.WriteLine($"A({m}, {n}) = {result}");
+
+
+//Напишите программу, которая будет принимать на вход число и возвращать сумму его цифр
+// 453 -> 12
+// 45 -> 9
+
+/*
+void PrintArray(string str, int[,] array){
+    Console.WriteLine($"{str}");
+    for(int row = 0; row < array.GetLength(0); row++){
+        for(int column = 0; column < array.GetLength(1); column++){
+            Console.Write($"{array[row, column]}\t");
+        }
+    Console.WriteLine();
+    }
+}
+
+int[,] matrix = new int[4,4]{
+    {3,8,5,1},
+    {14,15,6,4},
+    {37,81,92,10},
+    {654,3,64,6}
+};
+string str = "Исходная матрица";
+PrintArray(str, matrix);
+// int[,] newarray = new int[array.GetLength(0), array.GetLength(1)];
+for(int row = 0; row < matrix.GetLength(0); row++){
+    for(int column = 0; column < matrix.GetLength(1) - 1; column++){
+        int min = column;
+        for(int x = column + 1; x < matrix.GetLength(1); x++){
+            if(matrix[row, x] < matrix[row, min]){
+                min = x;
+            }
+        }
+        int temp = matrix[row, column];
+        matrix[row, column] = matrix[row, min];
+        matrix[row, min] = temp;
+    }
+}
+string newstr = "Должна быть новая матрица";
+PrintArray(newstr, matrix);
+
+/*
+void PrintArray(int[] array){
+    for(int column = 0; column < array.Length; column++){
+        Console.Write($"{array[column]} ");
+    }
+    Console.WriteLine();
+}
+
+int[] array = {654,9861,5,465,9,8};
+int[] newarray = new int[array.Length];
+PrintArray(array);
+
+for(int column = 0; column < array.Length - 1; column++){
+    int min = column;
+    for(int j = column + 1; j < array.Length; j++){
+        if(array[j] < array[min]){
+            min = j;
+        }
+    }
+    int temp = array[column];
+    array[column] = array[min];
+    array[min] = temp;
+}
+
+Console.WriteLine();
+PrintArray(array);
+*/
