@@ -1,12 +1,12 @@
-﻿int m = 5;
-int n = 1;
+﻿int N = 5;
+int stop = 1;
 
-void Range(int m, int n){
-    if (m == n){
-        Console.Write(m + " ");
+void Range(int N, int stop){
+    if (N == stop){
+        Console.Write(N + " ");
         return;
     }
-    Console.Write(m + " ");
-    Range(m - 1, n);
+    Console.Write(N + " ");
+    Range(N - 1, stop);
 }
-Range(m, n);
+Range(N, stop);

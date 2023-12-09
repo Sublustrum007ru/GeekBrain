@@ -723,7 +723,7 @@ void Range(int m, int n){
 }
 Range(m, n);
 */
-
+/*
 int A(int m, int n){
     if(m == 0){
         return n + 1;
@@ -741,7 +741,7 @@ int m = 3;
 int n = 2;    
 int result = A(m, n);
 Console.WriteLine($"A({m}, {n}) = {result}");
-
+*/
 
 //Напишите программу, которая будет принимать на вход число и возвращать сумму его цифр
 // 453 -> 12
@@ -810,3 +810,29 @@ for(int column = 0; column < array.Length - 1; column++){
 Console.WriteLine();
 PrintArray(array);
 */
+
+/*
+double Fibonacci(int n){
+    if( n == 1 || n ==2) return 1;
+    else return Fibonacci(n - 1) + Fibonacci(n - 2);
+}
+for(int i = 1; i < 50; i++){
+    Console.WriteLine($"{i} = {Fibonacci(i)}");
+}
+
+*/
+void DrawText(string text, int left, int top){
+    Console.SetCursorPosition(left, top);
+    Console.WriteLine(text);
+}
+
+string caption = "Intensice C# Demo text";
+int screenWidthPosition = (Console.WindowWidth - caption.Length) / 2;
+int screenHeightPosition = Console.WindowHeight / 2;
+
+// DrawText(caption, screenWidthPosition, screenHeightPosition); //Вариант 1
+DrawText(  // Вариант 2
+    text: caption,
+    left: screenWidthPosition,
+    top: screenHeightPosition
+);

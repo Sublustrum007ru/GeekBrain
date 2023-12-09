@@ -1,7 +1,10 @@
 ﻿using System;
 
-public class Answer
-{
+public class Answer{
+/// <summary>
+/// Вывод матрицы в консоль
+/// </summary>
+/// <param name="matrix">На вход получаем матрицу целочисленных чисел</param>
     public static void PrintMatrix(int[,] matrix)
     {
     // Введите свое решение ниже
@@ -13,7 +16,10 @@ public class Answer
         }
     }
 
-
+/// <summary>
+/// Сортировка чисел в строке от максимального к наименьшему
+/// </summary>
+/// <param name="matrix">На вход получаем матрицу целочисленных чисе</param>
     public static void SortRowsDescending(int[,] matrix)
     {
         for(int row = 0; row < matrix.GetLength(0); row++){
