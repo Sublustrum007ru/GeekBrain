@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=D:\learing\GeekBrain\Python\.Python
+=======
+set VIRTUAL_ENV=C:\Users\user\Documents\Learing\GeekBrain\Python\.Python
+>>>>>>> da9b2b3aa5b3c6776236b67bda98f4ecdc3b8196
 
 if not defined PROMPT set PROMPT=$P$G
 
