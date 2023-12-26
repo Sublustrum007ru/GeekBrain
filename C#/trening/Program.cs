@@ -821,6 +821,8 @@ for(int i = 1; i < 50; i++){
 }
 
 */
+
+/*
 void DrawText(string text, int left, int top){
     Console.SetCursorPosition(left, top);
     Console.WriteLine(text);
@@ -836,3 +838,42 @@ DrawText(  // Вариант 2
     left: screenWidthPosition,
     top: screenHeightPosition
 );
+
+*/
+
+
+void PrintArray(string[] array){
+    Console.WriteLine("[{0}]", string.Join(", ", array));
+}
+
+int FindLength(string[] array){
+    int result = 0;
+    for(int i = 0; i < array.Length; i++){
+        if(array[i].Length <= 3){
+            result = result + 1;
+        }
+    }
+    return result;
+}
+
+string[] CreateArray(string[] array, int length){
+    string [] newArray = new string [length];
+    int Index = 0;
+    for( int i = 0; i < array.Length; i++){
+        if(array[i].Length <= 3){
+            newArray[Index] = array[i];
+            Index = Index + 1;
+        }
+    }
+    return newArray;
+}
+
+
+string[] array = {"Hello", "-2", "world", ":-)", "321", "khg"};
+Console.WriteLine($"Исходный массив");
+PrintArray(array);
+int length = FindLength(array);
+string[] newArray = CreateArray(array, length);
+Console.WriteLine();
+Console.WriteLine($"Получившийся массив");
+PrintArray(newArray);
