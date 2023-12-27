@@ -1,6 +1,6 @@
 list = [1, 21 ,3, -46, 53, -6, 117]
 size = len(list)
-print(type(list))
+print(list)
 for i in range(size-1):
     min_position = i
     for j in range(i, size):
