@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Altair\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Documents\\Learing\\GeekBrain\\C#\\Seminar_1\\Task_3\\Task_3.csproj",
+      "projectUniqueName": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_3\\Task_3.csproj",
       "projectName": "Task_3",
-      "projectPath": "C:\\Users\\user\\Documents\\Learing\\GeekBrain\\C#\\Seminar_1\\Task_3\\Task_3.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Documents\\Learing\\GeekBrain\\C#\\Seminar_1\\Task_3\\obj\\",
+      "projectPath": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_3\\Task_3.csproj",
+      "packagesPath": "C:\\Users\\Altair\\.nuget\\packages\\",
+      "outputPath": "D:\\learing\\GeekBrain\\C#\\Seminar_1\\Task_3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Altair\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.417\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }
