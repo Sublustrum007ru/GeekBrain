@@ -12,9 +12,37 @@
 # На входе
 
 var1 = '5 4'       # количество элементов первого и второго множества
-var2 = '1 6 5 7 9 12' # элементы первого множества через пробел
-var3 = '7 2 3 4 5 1 12'   # элементы второго множества через пробел
+var2 = '10 30 5 7 9' # элементы первого множества через пробел
+var3 = '2 30 4 5'   # элементы второго множества через пробел
 
 # На выходе
 
 # 3 5 
+def sort(list):
+    size = len(list)
+    for i in range(size - 1):
+        min_position = i
+        for j in range(i, size):
+            if list[j] < list[min_position]:
+                min_position = j
+        temp = list[i]
+        list[i] = list[min_position]
+        list[min_position] = list[i]
+    print(list)
+    return list
+
+def createset(arg):
+    newset = set()
+    for i in arg:
+        if i != ' ':
+            newset.add(i)
+    return newset
+
+newset = set()
+for i in createset(var2.split(' ')):
+    for j in createset(var3.split(' ')):
+        if j == i:
+            newset.add(j)
+
+newlist = list(newset)
+sort(newlist)
