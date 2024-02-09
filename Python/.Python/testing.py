@@ -1,3 +1,6 @@
+import os.path
+import pandas as pd
+
 # data = [int(i) for i in input("Введите кол-во ягод: ").split()]
 # max_summa = 0
 # for i in range(len(data)):
@@ -127,22 +130,41 @@
 # print_operation_table(lambda x, y: x - y, 5, 5)
 
 
-def rhythm(str):
-    str = str.split()
-    list_1 = []
-    for word in str:
-        count = 0
-        for i in word:
-            if i in 'аеёиоуыэюя':
-                count += 1
-        list_1.append(count)
-    return len(list_1) == list_1.count(list_1[0])
+# def rhythm(str):
+#     str = str.split()
+#     list_1 = []
+#     for word in str:
+#         count = 0
+#         for i in word:
+#             if i in 'аеёиоуыэюя':
+#                 count += 1
+#         list_1.append(count)
+#     return len(list_1) == list_1.count(list_1[0])
+# stroka = 'Парам-пам-пам пам-парам'
 
+# if len(stroka.split()) > 1:
+#     if rhythm(stroka):
+#         print('Парам пам-пам')
+#     else:
+#         print('Пам парам')
+# else:
+#     print(f'Количество фраз должно быть больше одной!')
 
-if len(stroka.split()) > 1:
-    if rhythm(stroka):
-        print('Парам пам-пам')
-    else:
-        print('Пам парам')
-else:
-    print(f'Количество фраз должно быть больше одной!')
+# path = '.'
+# num_files = len([f for f in os.listdir(path)
+#                 if os.path.isfile(os.path.join(path, f))])
+
+# print(f'{num_files}')
+
+# input = int(input('Введите число от 1 до' 
+#                   '{num_files}'))
+
+# df = pd.read_csv('sample_data/california_housing_train.csv')
+# df.head()
+
+import random
+lst = ['robot'] * 10
+lst += ['human'] * 10
+random.shuffle(lst)
+data = pd.DataFrame({'whoAmI':lst})
+data.head()
