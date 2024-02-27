@@ -13,7 +13,7 @@ class LLTasks {
 }
 
 // Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-public class programm_1{ 
+public class Printer{ 
     public static void main(String[] args) { 
         LinkedList<Object> ll = new LinkedList<>();
 
