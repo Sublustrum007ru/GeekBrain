@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 import java.util.Arrays;
 
-// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-public class programm{ 
-    public static int [] mergeSort(int[] a) {
-        int length = a.length;
+class MergeSort {
+    public static int[] mergeSort(int[] a) {
+        // Напишите свое решение ниже
+    int length = a.length;
         if(length < 2) {
             return a;
         }
@@ -50,20 +49,24 @@ public class programm{
         }
 
         return arrayC;
+    
     }
+}
+
+// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+public class Printer{ 
     public static void main(String[] args) { 
         int[] a;
 
         if (args.length == 0) {
         // При отправке кода на Выполнение, вы можете варьировать эти параметры
-            a = new int[]{5, 1, 6, 2, 3, 4, -76, -7, 76, 653, 123};
+            a = new int[]{5, 1, 6, 2, 3, 4};
         } else {
             a = Arrays.stream(args[0].split(", ")).mapToInt(Integer::parseInt).toArray();
         }
 
-        // MergeSort answer = new MergeSort();
-        String itresume_res = Arrays.toString(mergeSort(a));
+        MergeSort answer = new MergeSort();
+        String itresume_res = Arrays.toString(answer.mergeSort(a));
         System.out.println(itresume_res);
     }
-
 }
