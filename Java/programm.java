@@ -1,32 +1,78 @@
-/*Первая задача автотеста
-class Answer {
-    public int countNTriangle(int n){
-        if (n < 1){
-            n = 1;
-            return n;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+class Answer{
+    public static void analyzeNumbers(Integer[] arr){
+        Integer[] sortArr = sortArray(arr);
+        ArrayList<Integer> array = new ArrayList<>();
+        for(int i = 0; i < sortArr.length; i++){
+            array.add(sortArr[i]);
         }
-        return (n * (n + 1)) / 2;
+        System.out.println(array);
+        int minArr = minArr(arr);
+        System.out.println("Minimum is " + minArr);
+        int maxArr = maxArr(arr);
+        System.out.println("Maximum is " + maxArr);
+        double averageArr = averageArr(arr);
+        System.out.println("Average is = " + averageArr);
+    }
+    public static Integer[] sortArray(Integer[] arr){
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < arr.length; j++){
+                if(arr[i] < arr[j]){
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
+            }
+        }
+        return arr;
+    }
+    public static int minArr(Integer[] arr){
+        int min = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] < min){
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+    public static int maxArr(Integer[] arr){
+        int max = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            if(arr[i] > max){
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    public static double averageArr(Integer[] arr){
+        double summ = 0;
+        for(int i = 0; i < arr.length; i++){
+            summ = summ + arr[i];
+
+        }
+        double average = summ / arr.length;
+        return average;
     }
 }
-
 
 public class programm{
-    
-    static public void main(String[] args){
-        int n = 0;
+    public static void main(String[] args) { 
+      Integer[] arr = {};
       
-        if (args.length == 0) {
+      if (args.length == 0) {
         // При отправке кода на Выполнение, вы можете варьировать эти параметры
-            n = 4;
-        }
-        else{
-            n = Integer.parseInt(args[0]);
-        }     
+        arr = new Integer[]{-2, -1, 0, 1, 2, 3, 4, 5};
+      }
+      else{
+        arr = Arrays.stream(args[0].split(", "))
+                        .map(Integer::parseInt)
+                        .toArray(Integer[]::new);
+      }     
       
-        // Вывод результата на экран
-        Answer ans = new Answer(); 
-        int itresume_res = ans.countNTriangle(n);     
-        System.out.println(itresume_res);
+      Answer ans = new Answer();      
+      ans.analyzeNumbers(arr);
     }
+
 }
-*/
