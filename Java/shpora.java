@@ -11,3 +11,4 @@ public class shpora  //  Строка открытия программы "progr
 // для вывода массива в консоль, нода импортировать модуль
 // import java.util.Arrays;
 // Затем в коде ввести System.out.println(Arrays.toString(array));
+// Для git push
