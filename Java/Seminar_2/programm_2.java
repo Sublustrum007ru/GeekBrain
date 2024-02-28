@@ -2,7 +2,8 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter.format;
+// import java.util.logging.SimpleFormatter.format;
+import java.util.logging.SimpleFormatter;
 
 class BubbleSort{
     // Создание логгера с нужным форматом вывода
@@ -53,7 +54,7 @@ class BubbleSort{
     }
 }
 
-public class Printer {
+public class programm_2 {
     public static void main(String[] args) {
         int[] arr = {};
 

@@ -1,0 +1,10 @@
+февр. 28, 2024 6:05:18 PM BubbleSort bubbleSort
+INFO: [4, 8, 3, 1, 9]
+февр. 28, 2024 6:05:18 PM BubbleSort bubbleSort
+INFO: [4, 3, 1, 8, 9]
+февр. 28, 2024 6:05:18 PM BubbleSort bubbleSort
+INFO: [3, 1, 4, 8, 9]
+февр. 28, 2024 6:05:18 PM BubbleSort bubbleSort
+INFO: [1, 3, 4, 8, 9]
+февр. 28, 2024 6:05:18 PM BubbleSort bubbleSort
+INFO: [1, 3, 4, 8, 9]
